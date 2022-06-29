@@ -48,19 +48,56 @@
    #create a list and append the input
    #keep on appending the task to list
 # task=str(input("Enter a task"))
-quantity=int(input("How many tasks would you wish to add"))
+
+
+#
+# from secrets import choice
+
+
+quantity=int(input("How many tasks would you wish to add "))
 p=[]
-while len(p)<quantity:
+while len(p)<quantity:            
      
      def tasking():
-        task2=str(input("Enter a task"))
+        task2=str(input("Enter a task "))
         p.append(task2)
 
      tasking()
 print(p)
-def done():
-  removing=str(input("Do you wish to remove an item "))
-  for i in p:
+choice=str(input("Do you wish to remove a task?Yes/No ")).lower()
+while(choice=="yes"):
+   removing=str(input("Which item do you wish to remove "))
+   if (removing in p):
+     result=p.index(removing)
+     p.pop(result)
+     print(f"{p} are the tasks left in your to do list ")
+   else:
+      print(f"Sorry you do not have {removing} in your days list")
+
+
+
+# def done():
+#      #check if item to be removed is actually in list 
+#    if (removing in p):
+#      result=p.index(removing)
+#      p.pop(result)
+#      print(f"{p} are the tasks left in your to do list ")
+#    else:
+
+#         print(f"Sorry,you do not have {removing} in your task")
+# done()
+
+
+
+     #remove item in list ,
+             #request user for input 
+             #remove the specific item using indexing wth dot pop
+             #print new list 
+
+
+  
+
+  
 # tasking()
 # print(p)
 
