@@ -71,7 +71,8 @@ while(choice=="yes"):
      result=p.index(removing)
      p.pop(result)
      print(f"{p} are the tasks left in your to do list ")
-   else:
+     break
+else:
       print(f"Sorry you do not hav{removing} in your days list")
 
 
