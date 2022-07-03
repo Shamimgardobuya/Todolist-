@@ -15,6 +15,6 @@ def summing(number):  #create function and pass in paramter
 
         # start.append(number)
         # print(number)
-b=summing(7)                             #create a variable  that'll hold the function.
+c=summing(7)                             #create a variable  that'll hold the function.
 
-print(b)
+print(c)
